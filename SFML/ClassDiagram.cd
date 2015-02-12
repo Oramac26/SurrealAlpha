@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CreditsScr" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Credits.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cScreen" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>cScreen.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Disp" Collapsed="true">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAIBCAAAAQAAAQgAAAICACAAAAAAAAAAIAAAoAAA=</HashCode>
+      <FileName>Display.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity" Collapsed="true">
+    <Position X="4.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAAAARAAgAEAACEAAAAAgICEACAAQABAAAAAAEAg=</HashCode>
+      <FileName>entity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="fight" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAHAQQAAACAgAAIAAAEAAAAAAAAAAAAAAAQo=</HashCode>
+      <FileName>fight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameScr" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAEAAAAAAAAAAAAAEAAABQAAAAAAAAAAI=</HashCode>
+      <FileName>Game.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hero" Collapsed="true">
+    <Position X="5.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAFCAIAAAAAIFAAMAIAwggiAoDAAAAAAABAAAAABY=</HashCode>
+      <FileName>hero.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuScr" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAABAAAAAAAAAAgAAAAAAAAAAAQAAAAAAAAAAAI=</HashCode>
+      <FileName>Menu.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjGenerator" Collapsed="true">
+    <Position X="12.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAhRIAAAAAABAQAEAAAAAAAAgAAAgIAAAA=</HashCode>
+      <FileName>generator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Place" Collapsed="true">
+    <Position X="14.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAQgAAAAAAAAAAABABAAQAAEAAQIAAAAA=</HashCode>
+      <FileName>places.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RNG" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAQgQACAAAAAAAAAEQA=</HashCode>
+      <FileName>RNG.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="item" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAgAAAABAA=</HashCode>
+      <FileName>item.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="weapon" Collapsed="true">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAgAAAAAAAAQAACAAEAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>weapons.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
