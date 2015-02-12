@@ -22,7 +22,7 @@ bool MenuScr::CorrectM(sf::Sprite &s, const sf::RenderWindow &w)
 
 MenuScr::MenuScr(){
 	options = false;
-	mus = true;
+	mus = false;
 	playing = false;
 };
 
@@ -67,8 +67,10 @@ int MenuScr::Run(sf::RenderWindow &win){
 	sf::Music bgsound;
 	bgsound.openFromFile("Soundtrack.wav");
 	bgsound.setVolume(60);
-	bgsound.play();
-	bgsound.setPlayingOffset(sf::seconds(TIME));
+	if (mus == true)
+	{
+		bgsound.setPlayingOffset(sf::seconds(TIME));
+	}
 
 	while (Running){
 
