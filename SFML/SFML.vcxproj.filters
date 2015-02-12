@@ -54,6 +54,9 @@
     <ClCompile Include="weapons.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Credits.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cScreen.hpp">

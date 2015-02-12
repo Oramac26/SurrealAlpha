@@ -70,6 +70,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Credits.cpp" />
     <ClCompile Include="Display.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="fight.cpp" />

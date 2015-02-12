@@ -138,6 +138,10 @@ int MenuScr::Run(sf::RenderWindow &win){
 				}
 				if (CorrectM(cred, win)) {
 					win.draw(credcl);
+					if (zdarzenie.type == sf::Event::MouseButtonReleased && zdarzenie.mouseButton.button == sf::Mouse::Left)
+					{
+						return (2);
+					}
 				}
 				if (CorrectM(exit, win)) {
 					win.draw(exitcl);

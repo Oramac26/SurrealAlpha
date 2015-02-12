@@ -162,7 +162,7 @@ int GameScr::Run(sf::RenderWindow &window){
 		dispWeapon(weap, weapon, weaponname2, RangedParameter, My_Hero->CarriedRangedWeapon(RangedParameter));
 		dispHours(TextH, Hours);
 		dispChoice(Choice, LocationParameter);
-		dispTime(TimeH, TimeM, Time_of_day, 00);							//TUJESTCZASKOLEŒ
+		dispTime(TimeH, TimeM, Time_of_day, 00);
 
 		if (com == true)
 		{
