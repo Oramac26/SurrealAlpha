@@ -81,9 +81,38 @@ void Hero::HeroExpReqInc()
 	level_exp_req = level_exp_req + skill_list.size()*level;
 }
 
+//item* FindItem(std::string name)
+//{
+	//if (item_list.size() > 0)
+	//{
+	//	for (int i = 0; i < item_list.size(); i++)
+	///	{
+	//		if (item_list[i]->name == name)
+	//		{
+	//			return item_list[i];
+	//		}
+	//	}
+	//	return 0;
+	//}
+	//else return 0;
+//}
+
 void Hero::AddItem(item* new_item)
 {
-	item_list.push_back(new_item);
+	if (item_list.size() > 0)
+	{
+		for (int i = 0; i < item_list.size(); i++)
+		{
+			if (item_list[i]->item_type == new_item->item_type)
+			{
+				*item_list[i] + *new_item;
+				break;
+			}
+		}
+		item_list.push_back(new_item);
+	}
+	else
+		item_list.push_back(new_item);
 }
 
 void Hero::ReplenishHP()

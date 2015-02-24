@@ -11,7 +11,7 @@
 
 class Hero : public Entity
 {
-private:
+protected:
 	bool sick;
 	bool sleep;
 	int level_exp;
@@ -38,13 +38,14 @@ public:
 	void AddSkill(Skills* New_skill) { skill_list.push_back(New_skill); };
 	int SkillNumber() { return skill_list.size(); };
 	Skills* FindSkill(std::string name);
+	item* FindItem(std::string name);
 	weapon* CarriedMeleeWeapon(int weapon_number);
 	weapon* CarriedMeleeWeapon();
 	weapon* CarriedRangedWeapon(int weapon_number);
 	void WeaponChoose(weapon* CarriedWeapon) { weapon_carried = CarriedWeapon; };
-	//void WeaponChoose();
+	void WeaponChoose();
 	void MeleeWeaponChoose(weapon* CarriedMeleeWeapon) { carried_melee_weapon = CarriedMeleeWeapon; };
-	//void MeleeWeaponChoose();
+	void MeleeWeaponChoose();
 	void HeroExpInc(int value);
 	void AddItem(item* new_item);
 	int WeaponNumber() { return weapon_list.size(); };
