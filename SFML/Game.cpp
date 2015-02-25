@@ -18,35 +18,6 @@
 #define yp 24
 
 
-//1 - home, 2 - forest, 3 - city, 4 - tunnels
-/*void GameScr::dispWeapon(sf::Texture &w, sf::Sprite &s, sf::Text &text, int parameter, weapon* displayed_weapon)
-{
-	std::ostringstream ss;
-	ss << displayed_weapon->name;
-	text.setString(ss.str());
-	if (displayed_weapon->range)
-	{
-		if (*displayed_weapon <= "slingshot") w.loadFromFile("slingshot.png");
-		//if (My_Hero->) w.loadFromFile("slingshot.png");
-		if (*displayed_weapon <= "bow") w.loadFromFile("bow.png");
-		if (*displayed_weapon <= "crossbow") w.loadFromFile("crossbow.png");
-		s.setTexture(w);
-		s.setPosition(1150, 360);
-		text.setPosition(1160, 481);
-	}
-	else
-	{
-		if (*displayed_weapon <= "stick") w.loadFromFile("stick.png");
-		if (*displayed_weapon <= "knife") w.loadFromFile("knife.png");
-		if (*displayed_weapon <= "axe") w.loadFromFile("axe.png");
-		s.setTexture(w);
-		s.setPosition(1150, 190);
-		text.setPosition(1160, 305);
-	}
-	win->draw(s);
-	win->draw(text);
-}
-*/
 void GameScr::dispGo(sf::Sprite &image, sf::Event *zdarzenie, std::vector <std::string> &sentence, int *CurrentLoc, int *LocationParameter, int *Hours)
 {
 	if (CorrectM(image))
@@ -56,9 +27,9 @@ void GameScr::dispGo(sf::Sprite &image, sf::Event *zdarzenie, std::vector <std::
 		{
 			if (Time_of_day < 22)
 			{
-				places_list[*CurrentLoc - 1]->VisitPlace(My_Hero, *Hours, &sentence);
-				sentence.push_back("You came back home");
 				*CurrentLoc = *LocationParameter;
+				places_list[*CurrentLoc - 2]->VisitPlace(My_Hero, *Hours, &sentence);
+				sentence.push_back("You came back home");
 				Sleep(100);
 				*CurrentLoc = 1;
 				Time_of_day += *Hours;

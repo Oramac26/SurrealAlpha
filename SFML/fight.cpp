@@ -81,16 +81,18 @@ void fight::Main_Fight(std::vector<std::string> *comunicates)
 		}
 		hero->ChangeStamina(STAMINA);
 		enemy->ChangeStamina(STAMINA);
-		if (hero->ViewHealth() == 0)
+		if (hero->ViewHealth() <= 0)
 		{
 			fight_end = true;
+			hero->Kill();
 		}
-		if (enemy->ViewHealth() == 0)
+		if (enemy->ViewHealth() <= 0)
 		{
 			fight_end = true;
 			hero->HeroExpInc(number.SmallRange(enemy->ViewLevel()*10));
 			comunicate = "You won";
 			comunicates->push_back(comunicate);
+			enemy->Kill();
 		}
 	}
 }

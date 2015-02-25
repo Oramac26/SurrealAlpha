@@ -17,9 +17,9 @@ protected:
 	std::vector<Enemy*> place_enemies;
 	RNG number;
 public:
-	//place(std::string name) : place_name(name), place_luck(0), visits_count(0) {}
 	Place(std::string name, int luck);
 	void VisitPlace(Hero* myhero, int time, std::vector<std::string> *comunicates);
+	void RefillPlace ();
 };
 
 #endif

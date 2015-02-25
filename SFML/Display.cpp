@@ -149,22 +149,7 @@ void Disp::dispTime(sf::Text &textH, sf::Text &textM, int hours, int minutes)
 	win->draw(textM);
 }
 
-/*void Disp::dispGo(sf::Sprite &image, sf::Event *zdarzenie, std::vector <std::string> &sentence,int *CurrentLoc,int *LocationParameter)
-{
-	if (CorrectM(image))
-	{
-		win->draw(image);
-		if (zdarzenie->type == sf::Event::MouseButtonPressed && zdarzenie->mouseButton.button == sf::Mouse::Left)
-		{
-			places_list[*CurrentLoc - 1]->VisitPlace(My_Hero, Hours, &sentence);
-			sentence.push_back("You came back home");
-			*CurrentLoc = *LocationParameter;
-			sentence.push_back("you entered another locaction");
-			Sleep(100);
-		}
-	}
-}
-*/
+
 
 void Disp::dispThing(sf::Sprite &image, sf::Event *zdarzenie, std::vector <std::string> &sentence, std::string com)
 {
